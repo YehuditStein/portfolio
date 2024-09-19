@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון</title>
+    <link rel="stylesheet"href="styles.css">
+</head>
+
+<body>
+    <h1 class="game-title">משחק הזיכרון</h1>
+    <div class="game-wrapper">
+        <div class="game-container"></div>
+        <div class="controls">
+            <div class="difficulty-buttons">
+                <button class="difficulty-button" data-difficulty="easy">קל</button>
+                <button class="difficulty-button" data-difficulty="medium">בינוני</button>
+                <button class="difficulty-button" data-difficulty="hard">קשה</button>
+            </div>
+            <div class="card-type-buttons">
+                <button class="card-type-button" data-type="type1">חיות</button>
+                <button class="card-type-button" data-type="type2">נופים</button>
+            </div>
+            <button class="reset-button">אפס משחק</button>
+        </div>
+    </div>
+    <!-- תיבת הודעת הניצחון -->
+    <div class="victory-message" id="victoryMessage">
+        ניצחת! כל הכבוד!
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

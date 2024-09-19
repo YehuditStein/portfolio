@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פורטפוליו </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- קישור לקובץ CSS מותאם אישית -->
+</head>
+
+<body>
+
+    <!-- אזור עליון -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <a class="navbar-brand navbar-link" href="#">
+        <img src="images/logo.jpg" alt="לוגו" class="logo-img">
+        יהודית שטיינבך
+    </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">אודות</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">גלריה</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">צור קשר</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- אזור פתיחה -->
+    <section id="hero" class="text-center py-5">
+        <h1>Portfolio</h1>
+        <p>כאן תוכלו לראות ולהתרשם מהעבודות והפרוייקטים שלי</p>
+        
+    </section>
+
+    <!-- אזור אודות -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <img src="images/logo.jpg" alt="תמונה אישית" class="img-fluid rounded-circle mb-4" width="150">
+            <h2>קצת עליי</h2>
+            <p>בעלת חשיבה לוגית, יסודית ופרקטית, אחראית , בעלת מוסר עבודה גבוה, כושר ליזום ולהניע
+            תהליכים , יצירתיות, יחסי אנוש מעולים ,יכולת למידה עצמית , מגדילה ראש ובעלת מוטיבציה
+            גבוהה ונכונות ללמוד ולהתפתח. </p>
+            <a href="images/resume.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer" download>הורדת קורות חיים</a>
+        </div>
+    </section>
+
+    <!-- אזור טכנולוגיות -->
+    <section id="technologies" class="text-center">
+        <div class="container">
+            <h3>הטכנולוגיות שבהן השתמשתי</h3>
+            <ul class="d-flex justify-content-center">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- אזור גלריה -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">העבודות שלי</h2>
+            <div class="row">
+                <!-- כרטיס פרויקט -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/calculator.png" class="card-img-top" alt="מחשבון">
+                        <div class="card-body">
+                            <h5 class="card-title">מחשבון</h5>
+                            <p class="card-text">בפרויקט זה בניתי מחשבון בסיסי עם פונקציות של חיבור, חיסור, כפל וחילוק.</p>
+                            <a href="/pageProject/calculator.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/guessTheNumber.png" class="card-img-top" alt="נחש את המספר">
+                        <div class="card-body">
+                            <h5 class="card-title">נחש את המספר</h5>
+                            <p class="card-text">המשחק נחש את המספר הוא משחק פשוט שהמחשב מגריל מספר והמשתמש צריך לנחש.</p>
+                            <a href="pageProject/guesTheNum.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/manageU.png" class="card-img-top" alt="ניהול משימות">
+                        <div class="card-body">
+                            <h5 class="card-title">ניהול משימות</h5>
+                            <p class="card-text">פרויקט ניהול המשימות שכתבתי ב-JavaScript מאפשר להוסיף, למחוק ולסמן משימות כבוצעו, תוך שמירה ב-LocalStorage כדי לשמור את
+            המשימות בין סשנים.</p>
+                            <a href="pageProject/manageU.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/memoryGame.png" class="card-img-top" alt="משחק הזיכרון">
+                        <div class="card-body">
+                            <h5 class="card-title">משחק הזיכרון</h5>
+                            <p class="card-text">פרויקט משחק הזיכרון שיצרתי כולל כמה רמות קושי ושני סוגי קלפים שונים, ומאתגר את המשתמשים בהתאמת זוגות קלפים זהים.</p>
+                            <a href="pageProject/memoryGame.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/myAcount.png" class="card-img-top" alt="ניהול חשבון">
+                        <div class="card-body">
+                            <h5 class="card-title">ניהול חשבון</h5>
+                            <p class="card-text">פרויקט ניהול חשבון מאפשר להוסיף הכנסות והוצאות, ומציג את היתרה הכוללת לניהול פיננסי יעיל.</p>
+                            <a href="pageProject/myAcount.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/shoppingList.png" class="card-img-top" alt="רשימת קניות">
+                        <div class="card-body">
+                            <h5 class="card-title">רשימת קניות</h5>
+                            <p class="card-text">פרויקט רשימת קניות שלי מאפשר למשתמשים להוסיף פריטים לרשימה וכך לשמור על ראש שקט שהולכים לקניות.</p>
+                            <a href="pageProject/shoppingList.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/weather.png" class="card-img-top" alt="מזג אוויר">
+                        <div class="card-body">
+                            <h5 class="card-title">מזג אוויר</h5>
+                            <p class="card-text">פרויקט מזג האוויר שלי משתמש ב-API כדי להציג תחזית מזג האוויר הנוכחית והקרובה לפי בקשת המשתמש.</p>
+                            <a href="pageProject/calculator.html" class="btn btn-primary" target="_blank" rel="noopener noreferrer">לפרויקט</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- אזור צור קשר -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2>צור קשר</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="שם מלא" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="דואר אלקטרוני" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" placeholder="טלפון" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" placeholder="הודעה"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">שלח</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- אזור תחתון -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>נבנה על ידי יהודית שטיינבך</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

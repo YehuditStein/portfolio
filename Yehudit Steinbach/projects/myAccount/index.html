@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+        integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>My <i class="fa-solid fa-chart-pie"></i> Account </h1>
+
+        <div class="balance">
+            <h3>Balance:<span id="balance"></span></h3>
+        </div>
+
+        <div class="info">
+            <div class="form">
+                <!-- form -->
+                
+                <select id="type" class="form-select" aria-label="Default select example">
+                    <option selected value="income">Income</option>
+                    <option value="expense">Exepnse</option>
+                </select>
+                <div class="form-floating my-3">
+                    <input type="text" class="form-control" id="description"  placeholder="Description" required/>
+                    <label for="description">Description</label>
+                </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="amount"  placeholder="0" required />
+                    <label for="amount">Amount</label>
+                </div>
+                <button onclick="addActive()" >Add</button>
+            </div></form>
+
+            <div class="result" id="result">
+                <table class="table" id="table">
+                    <thead id="thead">
+                        <tr>
+                            <th class="col-5">Description  </th>
+                            <th class="col-5">amount</th>
+                            <th class="col-1"></th>
+                            <th class="col-1"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
+          
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>
